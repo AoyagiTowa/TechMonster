@@ -1,24 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="misaki_gothic.ttf">
+            <string>MisakiGothic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TechMonster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgimage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8si-bl-3aw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lobby.png" translatesAutoresizingMaskIntoConstraints="NO" id="bJv-34-oXJ">
+                                <rect key="frame" x="0.0" y="108" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Dp8-D2-DAb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yusya.png" translatesAutoresizingMaskIntoConstraints="NO" id="bmn-qW-jb0">
+                                <rect key="frame" x="64" y="208" width="286" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="e5q-Hq-EPO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihO-r6-Um3">
+                                <rect key="frame" x="16" y="124" width="34" height="17"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lv.15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPc-Lp-2UE">
+                                <rect key="frame" x="355" y="124" width="43" height="17"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スタミナ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pg-f3-BXn">
+                                <rect key="frame" x="16" y="475" width="68" height="17"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 / 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La7-bB-nWe">
+                                <rect key="frame" x="100" y="472" width="90" height="20"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gx-9L-5iP">
+                                <rect key="frame" x="82" y="602" width="250" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="24d-b2-4ht"/>
+                                    <constraint firstAttribute="width" constant="250" id="ej4-g5-0o7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="24"/>
+                                <state key="normal" title="冒険に行く" backgroundImage="gold_button.png">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BPc-Lp-2UE" firstAttribute="top" secondItem="bJv-34-oXJ" secondAttribute="top" constant="16" id="0rJ-Ur-jvd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8si-bl-3aw" secondAttribute="bottom" id="2Ct-N8-qSF"/>
+                            <constraint firstItem="8si-bl-3aw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5v7-w8-Chp"/>
+                            <constraint firstItem="La7-bB-nWe" firstAttribute="leading" secondItem="2Pg-f3-BXn" secondAttribute="trailing" constant="16" id="A6T-DL-J1J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9gx-9L-5iP" secondAttribute="bottom" constant="160" id="ADy-6i-qph"/>
+                            <constraint firstItem="8si-bl-3aw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AL3-kO-jUN"/>
+                            <constraint firstItem="bmn-qW-jb0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="C6j-zw-Kdh"/>
+                            <constraint firstItem="bJv-34-oXJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DXN-NB-8zP"/>
+                            <constraint firstItem="ihO-r6-Um3" firstAttribute="leading" secondItem="bJv-34-oXJ" secondAttribute="leading" constant="16" id="EFP-TC-MUy"/>
+                            <constraint firstItem="bJv-34-oXJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="JfG-Rv-8e7"/>
+                            <constraint firstItem="La7-bB-nWe" firstAttribute="bottom" secondItem="bJv-34-oXJ" secondAttribute="bottom" constant="-16" id="P7F-UX-LNE"/>
+                            <constraint firstItem="2Pg-f3-BXn" firstAttribute="bottom" secondItem="bJv-34-oXJ" secondAttribute="bottom" constant="-16" id="T56-Yv-R1I"/>
+                            <constraint firstItem="ihO-r6-Um3" firstAttribute="top" secondItem="bJv-34-oXJ" secondAttribute="top" constant="16" id="VVP-xk-Pzb"/>
+                            <constraint firstItem="bmn-qW-jb0" firstAttribute="centerY" secondItem="bJv-34-oXJ" secondAttribute="centerY" id="WcF-eX-Xu2"/>
+                            <constraint firstItem="bmn-qW-jb0" firstAttribute="centerX" secondItem="bJv-34-oXJ" secondAttribute="centerX" id="ZZd-7R-A31"/>
+                            <constraint firstItem="bJv-34-oXJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bP6-Hp-d3o"/>
+                            <constraint firstItem="9gx-9L-5iP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dwI-Kd-3Uw"/>
+                            <constraint firstItem="BPc-Lp-2UE" firstAttribute="trailing" secondItem="bJv-34-oXJ" secondAttribute="trailing" constant="-16" id="exA-g0-zcq"/>
+                            <constraint firstItem="2Pg-f3-BXn" firstAttribute="leading" secondItem="bJv-34-oXJ" secondAttribute="leading" constant="16" id="ftt-re-Dq6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8si-bl-3aw" secondAttribute="trailing" id="h0a-wx-IGF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bmn-qW-jb0" secondAttribute="trailing" constant="64" id="qd9-Tf-DzM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bJv-34-oXJ" secondAttribute="trailing" id="rRU-Rc-5SO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hcN-U6-8kC">
+            <objects>
+                <viewController id="MIF-Tk-Lv2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4R8-ij-eXc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="O2m-li-SgS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1u-L0-Mxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="94"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bgimage.jpg" width="1280" height="960"/>
+        <image name="gold_button.png" width="800" height="245"/>
+        <image name="lobby.png" width="500" height="400"/>
+        <image name="yusya.png" width="56" height="56"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
