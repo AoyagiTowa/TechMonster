@@ -30,6 +30,7 @@
 		8A348B6325D2CEAC00637AE7 /* SE_charge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A348B5125D2CEAC00637AE7 /* SE_charge.mp3 */; };
 		8A348B6425D2CEAC00637AE7 /* lobby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A348B5225D2CEAC00637AE7 /* lobby.mp3 */; };
 		8A348B6525D2CEAC00637AE7 /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A348B5425D2CEAC00637AE7 /* misaki_gothic.ttf */; };
+		8A35976A25D420E200D1CD8C /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35976925D420E200D1CD8C /* BattleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		8A348B5125D2CEAC00637AE7 /* SE_charge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_charge.mp3; sourceTree = "<group>"; };
 		8A348B5225D2CEAC00637AE7 /* lobby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lobby.mp3; sourceTree = "<group>"; };
 		8A348B5425D2CEAC00637AE7 /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
+		8A35976925D420E200D1CD8C /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				8A348B3325D2CE7E00637AE7 /* Assets.xcassets */,
 				8A348B3525D2CE7E00637AE7 /* LaunchScreen.storyboard */,
 				8A348B3825D2CE7E00637AE7 /* Info.plist */,
+				8A35976925D420E200D1CD8C /* BattleViewController.swift */,
 			);
 			path = TechMonster;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A35976A25D420E200D1CD8C /* BattleViewController.swift in Sources */,
 				8A348B5C25D2CEAC00637AE7 /* TechMonManager.swift in Sources */,
 				8A348B2F25D2CE7A00637AE7 /* ViewController.swift in Sources */,
 				8A348B5D25D2CEAC00637AE7 /* Character.swift in Sources */,
