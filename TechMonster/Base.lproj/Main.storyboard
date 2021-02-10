@@ -71,7 +71,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="toButtle" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rF-zO-DT0"/>
+                                    <action selector="toBattle" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Dg-8J-6Gp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -240,6 +240,9 @@
                                         <state key="normal" title="こうげき" backgroundImage="gold_button.png">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="attackAction" destination="MIF-Tk-Lv2" eventType="touchUpInside" id="Lfg-fo-xTk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxp-7l-xNg">
                                         <rect key="frame" x="132.5" y="0.0" width="117" height="100"/>
@@ -247,6 +250,9 @@
                                         <state key="normal" title="ファイア" backgroundImage="gold_button.png">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="fireAction" destination="MIF-Tk-Lv2" eventType="touchUpInside" id="kyV-a8-XtB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htJ-Y9-Ums">
                                         <rect key="frame" x="265.5" y="0.0" width="116.5" height="100"/>
@@ -254,6 +260,9 @@
                                         <state key="normal" title="ためる" backgroundImage="gold_button.png">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tameruAction" destination="MIF-Tk-Lv2" eventType="touchUpInside" id="xDa-xZ-laj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -313,15 +322,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="O65-2I-AlY"/>
                     <connections>
-                        <outlet property="enamyImage" destination="t8K-g6-8Te" id="MiL-nz-RJt"/>
-                        <outlet property="enemyHP" destination="vwb-bc-G0b" id="JTc-dn-Kwa"/>
-                        <outlet property="enemyMP" destination="AJb-ET-IIk" id="lGg-BX-phK"/>
+                        <outlet property="enemyHPLabel" destination="vwb-bc-G0b" id="rDZ-fl-UXX"/>
+                        <outlet property="enemyImage" destination="t8K-g6-8Te" id="a5M-xZ-m00"/>
+                        <outlet property="enemyMPLabel" destination="AJb-ET-IIk" id="MeU-4c-BKx"/>
                         <outlet property="enemyName" destination="WMq-c2-rHY" id="X4H-ye-7FS"/>
-                        <outlet property="playerHP" destination="lMN-uJ-cTe" id="0MG-4N-fVY"/>
+                        <outlet property="playerHPLabel" destination="lMN-uJ-cTe" id="u2q-Om-Rnm"/>
                         <outlet property="playerImage" destination="PAa-Bs-kdE" id="Vdu-Ft-ome"/>
-                        <outlet property="playerMP" destination="Tbg-0a-I35" id="AuA-MT-ZdC"/>
+                        <outlet property="playerMPLabel" destination="Tbg-0a-I35" id="lEm-R4-9pp"/>
                         <outlet property="playerName" destination="nbm-Dv-dyv" id="WGj-lv-zFr"/>
-                        <outlet property="playerTP" destination="lnC-7i-IMx" id="Ue5-EN-l2F"/>
+                        <outlet property="playerTPLabel" destination="lnC-7i-IMx" id="2pI-dt-o5s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1u-L0-Mxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

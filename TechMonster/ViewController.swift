@@ -43,11 +43,11 @@ class ViewController: UIViewController {
         techMonManager.stopBGM()
     }
 
-    @IBAction func toButtle() {
+    @IBAction func toBattle() {
         if stamina >= 50 {
             stamina -= 50
             staminaLabel.text = "\(stamina)/100"
-            performSegue(withIdentifier: "toButtle", sender: nil)
+            performSegue(withIdentifier: "toBattle", sender: nil)
         } else {
             let alert = UIAlertController(
                 title: "バトルに行けない！", message: "スタミナを貯めよう！", preferredStyle: .alert
